@@ -1,0 +1,5 @@
+kubectl port-forward svc/traefik 8080:80 -n traefik
+curl -X POST --resolve example.com:8080:127.0.0.1 \
+  -H "Content-Type: application/json" \
+  -d '{"text":"I love this movie"}' \
+  http://example.com:8080/predict

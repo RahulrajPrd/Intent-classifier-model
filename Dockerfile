@@ -1,5 +1,5 @@
 # Use a slim official Python image
-FROM python:3.10-slim
+FROM python:3.12-slim
 
 # Prevent Python from writing .pyc files and enable stdout/stderr flushing
 ENV PYTHONDONTWRITEBYTECODE=1
